@@ -1,0 +1,89 @@
+# 适用于【鼠须管】0.9.13+
+# 位置：~/Library/Rime/squirrel.custom.yaml
+# 用法：想要哪项生效，就删去该行行首的 "#" 字符，但注意保留用于缩进的空格
+
+patch:
+  #  us_keyboard_layout: true                 # 键盘选项：应用美式键盘布局
+  # 状态通知，适当，也可设为全开（always）全关（never）
+  #  show_notifications_when: appropriate
+  #
+  style/color_scheme: solarized_rock # 选择配色方案
+  style/horizontal: true # 候选窗横向显示
+  #  style/inline_preedit: false              # 关闭内嵌编码，这样就可以显示首行的拼音
+  #  style/corner_radius: 10                  # 窗口圆角半径
+  #  style/border_height: 0                   # 窗口边界高度，大于圆角半径才有效果
+  #  style/border_width: 0                    # 窗口边界宽度，大于圆角半径才有效果
+  #  style/line_spacing: 1                    # 候选词的行间距
+  #  style/spacing: 5                         # 在非内嵌编码模式下，预编辑和候选词之间的间距
+  style/font_face: 'Hiragino Sans GB W3' # 字体名称
+  style/font_point: 21 # 字号
+
+  # 注：预设的配色方案及代码（指定为 style/color_scheme ）
+  #   碧水 - aqua
+  #   青天 - azure
+  #   明月 - luna
+  #   墨池 - ink
+  #   孤寺 - lost_temple
+  #   暗堂 - dark_temple
+  #   星际我争霸 - starcraft
+  #   谷歌 - google
+  #   晒经石 - solarized_rock
+  #   简约白 - clean_white
+  # other color schems:
+  #   my_clean_white by Chongyu Zhu
+
+  preset_color_schemes/my_clean_white:
+    author: 'Chongyu Zhu <lembacon@gmail.com>, based on 搜狗「简约白」'
+    back_color: 0xeeeeee
+    border_height: 6
+    border_width: 6
+    # candidate_format: "%c %@ "
+    candidate_format: "%c\u2005%@\u2005" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+    candidate_text_color: 0x000000
+    comment_text_color: 0x808080
+    corner_radius: 6
+    font_point: 16
+    hilited_candidate_back_color: 0xeeeeee
+    hilited_candidate_label_color: 0xa0c98915
+    hilited_candidate_text_color: 0xc98915
+    hilited_text_color: 0x000000
+    horizontal: true
+    label_color: 0x888888
+    label_font_point: 12
+    name: '简约白／Clean White'
+    text_color: 0x808080
+
+  # 输入法在某些应用下，默认用英文
+
+  app_options:
+    # 右键『应用.app』-> 显示包内容 Contents/Info.plist -> BundleIdentifier
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.apple.Spotlight:
+      ascii_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+    #
+    com.alfredapp.Alfred:
+      ascii_mode: true
+    com.runningwithcrayons.Alfred-2:
+      ascii_mode: true
+    com.blacktree.Quicksilver:
+      ascii_mode: true
+    #
+    org.vim.MacVim:
+      ascii_mode: true
+      no_inline: true
+    #com.barebones.textwrangler:
+    #  ascii_mode: true
+    #com.macromates.TextMate.preview:
+    #  ascii_mode: true
+    #com.sublimetext.2:
+    #  ascii_mode: true
+    #org.gnu.Aquamacs:
+    #  ascii_mode: true
+    #org.gnu.Emacs:
+    #  ascii_mode: true
