@@ -10,13 +10,13 @@ patch:
   style/color_scheme: solarized_rock # 选择配色方案
   style/horizontal: true # 候选窗横向显示
   #  style/inline_preedit: false              # 关闭内嵌编码，这样就可以显示首行的拼音
-  #  style/corner_radius: 10                  # 窗口圆角半径
-  #  style/border_height: 0                   # 窗口边界高度，大于圆角半径才有效果
+  style/corner_radius: 6 # 窗口圆角半径
+  style/border_height: 10 # 窗口边界高度，大于圆角半径才有效果
   #  style/border_width: 0                    # 窗口边界宽度，大于圆角半径才有效果
   #  style/line_spacing: 1                    # 候选词的行间距
   #  style/spacing: 5                         # 在非内嵌编码模式下，预编辑和候选词之间的间距
   style/font_face: 'Hiragino Sans GB W3' # 字体名称
-  style/font_point: 21 # 字号
+  style/font_point: 16 # 字号
 
   # 注：预设的配色方案及代码（指定为 style/color_scheme ）
   #   碧水 - aqua
@@ -67,23 +67,10 @@ patch:
     com.googlecode.iterm2:
       ascii_mode: true
     #
-    com.alfredapp.Alfred:
-      ascii_mode: true
-    com.runningwithcrayons.Alfred-2:
-      ascii_mode: true
-    com.blacktree.Quicksilver:
+    com.runningwithcrayons.Alfred-3:
       ascii_mode: true
     #
-    org.vim.MacVim:
+    com.google.Chrome:
       ascii_mode: true
-      no_inline: true
-    #com.barebones.textwrangler:
-    #  ascii_mode: true
-    #com.macromates.TextMate.preview:
-    #  ascii_mode: true
-    #com.sublimetext.2:
-    #  ascii_mode: true
-    #org.gnu.Aquamacs:
-    #  ascii_mode: true
-    #org.gnu.Emacs:
-    #  ascii_mode: true
+    com.google.Chrome.canary:
+      ascii_mode: true
