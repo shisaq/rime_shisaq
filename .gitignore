@@ -2,3 +2,4 @@ luna_pinyin.userdb/
 *.bin
 build/
 sync/
+*.backup
